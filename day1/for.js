@@ -61,7 +61,13 @@ let inventors = [
 */
 console.log("------------------Inventors------------------");
 
-
+for(let i = 0; i < inventors.length; i++) {
+	//console.log(inventors[i]);
+	console.log(inventors[i].name);
+	console.log(inventors[i].gender);
+	console.log(inventors[i].invention);
+	console.log(inventors[i].liked);
+}
 
 
 /* 
@@ -69,8 +75,11 @@ console.log("------------------Inventors------------------");
 */
 console.log("---------------Female Inventors--------------");
 
-
-
+for(let i = 0; i < inventors.length; i++) {
+	if(inventors[i].gender == "Female") {
+		console.log(inventors[i].name);
+	}
+}
 
 
 /* 
@@ -78,7 +87,11 @@ console.log("---------------Female Inventors--------------");
 */
 console.log("----------------Male Inventors---------------");
 
-
+for(let i = 0; i < inventors.length; i++) {
+	if(inventors[i].gender == "Male") {
+		console.log(inventors[i].name);
+	}
+}
 
 
 /*
@@ -87,8 +100,9 @@ console.log("----------------Male Inventors---------------");
  * property of every other inventor. 
 */
 
-
-
+for(let i = 0; i < inventors.length; i = i + 2) {
+	inventors[i].liked = true;
+}
 
 
 /*
@@ -96,4 +110,11 @@ console.log("----------------Male Inventors---------------");
  * meaning inventors whose liked property is set to true
 */ 
 
+let count = 0;
+for(let i = 0; i < inventors.length; i++) {
+	if(inventors[i].liked == true) {
+		count++;
+	}
+}
 
+console.log(count);
