@@ -77,7 +77,7 @@ console.log("---------------Female Inventors--------------");
 
 for(let i = 0; i < inventors.length; i++) {
 	if(inventors[i].gender == "Female") {
-		console.log(inventors[i].name);
+		console.log(c.name);
 	}
 }
 
