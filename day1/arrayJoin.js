@@ -43,7 +43,6 @@ phrases.splice(4,0,"to");
  * the current index of "umbrella".
 */
 
-//console.log(phrases.indexOf("umbrellas"));
 phrases[phrases.indexOf("umbrellas")] = phrases[1];
 
 /* Add the phrase "change the world," 
